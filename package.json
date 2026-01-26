@@ -10,9 +10,10 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
-	    "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+	"start": "vite", 
+	"vite preview": "vite preview", 
+	"predeploy": "npm run build", 
+	"deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/plus-jakarta-sans": "^5.2.8",
