@@ -12,7 +12,7 @@ const Index = () => {
     whatsapp: "+601172727996",
     shopee: "https://shopee.com.my/your-shop-link",
     telegram: "https://t.me/your-telegram-group",
-    posterImage: "/PopupImg.gif",
+    posterImage: import.meta.env.BASE_URL + "PopupImg.gif",
     gallery: [
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
       "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
