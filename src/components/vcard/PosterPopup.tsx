@@ -62,7 +62,7 @@ const PosterPopup: React.FC<PosterPopupProps> = ({
                 <motion.img
                   src={posterImage}
                   alt="Poster"
-                  className="w-full max-h-[400px] object-contain border-2 border-foreground rounded-sm mb-5 shadow-brutal"
+                  className="w-full h-auto border-2 border-foreground rounded-sm mb-5 shadow-brutal block"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
