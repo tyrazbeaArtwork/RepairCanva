@@ -9,15 +9,15 @@ import { toast } from "sonner";
 // ============================================
 const SELLER_CONFIG = {
   // Bank details
-  bankName: "Maybank",
-  accountNumber: "1234 5678 9012",
-  recipientName: "Tyrazbea Design",
-  
+  bankName: "CIMB",
+  accountNumber: "7626 5950 45",
+  recipientName: "AINA ATHIRAH BINTI ZAINI",
+
   // QR Code image
-  qrCodeUrl: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&h=400&fit=crop",
-  
+  qrCodeUrl: import.meta.env.BASE_URL + "payment-qr.png",
+
   // WhatsApp number (with country code, no + or spaces)
-  whatsappNumber: "60123456789",
+  whatsappNumber: "601173089330",
 };
 
 const QuickPay = () => {
@@ -100,12 +100,12 @@ const QuickPay = () => {
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl" />
-            
+
             <div className="relative p-8 flex flex-col items-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-accent/20 rounded-2xl blur-xl scale-110" />
                 <div className="relative w-48 h-48 bg-white rounded-2xl p-3 shadow-lg">
-                  <div 
+                  <div
                     className="w-full h-full bg-cover bg-center rounded-xl"
                     style={{ backgroundImage: `url(${SELLER_CONFIG.qrCodeUrl})` }}
                     role="img"
@@ -141,9 +141,8 @@ const QuickPay = () => {
             ].map((item, index) => (
               <div
                 key={item.field}
-                className={`flex justify-between items-center p-4 ${
-                  index !== 2 ? "border-b border-border/50" : ""
-                } hover:bg-muted/30 transition-colors`}
+                className={`flex justify-between items-center p-4 ${index !== 2 ? "border-b border-border/50" : ""
+                  } hover:bg-muted/30 transition-colors`}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-xl">{item.icon}</span>
